@@ -65,7 +65,9 @@
             document.getElementById('category').value = ''
 
             const parent = document.getElementById(user.category)
-            const child = `<li id=${user._id}> ${user.price} - ${user.product} - ${user.category} <button onclick= editOrder('${user.price}','${user.product}','${user.category}','${user._id}')> Edit Order </button> <button onclick = deleteOrder('${user._id}','${user.category}')> Delete Order </button> </li>`
+            const child = `<li id=${user._id}> ${user.price} - ${user.product} - ${user.category}
+            <button onclick= editOrder('${user.price}','${user.product}','${user.category}','${user._id}')> Edit Order </button>
+            <button onclick = deleteOrder('${user._id}','${user.category}')> Delete Order </button> </li>`
             parent.innerHTML = parent.innerHTML + child 
         } 
 
